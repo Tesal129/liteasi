@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - Kopi Wantuneun</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f2; /* Krem Lembut */
+            color: #382c20; /* Cokelat Gelap */
+        }
+        /* Navigasi */
+        .navbar {
+            background-color: #382c20;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #6F4E37; /* Cokelat Kopi */
+        }
+        
+        /* Konten Utama */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container h1 {
+            color: #A0522D;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        /* Styling Layanan */
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: calc(50% - 30px); /* Dua kolom */
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .service-card h2 {
+            color: #4A3A2C;
+            font-size: 1.5em;
+            margin-top: 0;
+            border-bottom: 2px solid #E0C7A9;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            line-height: 1.6;
+            color: #dcaa64;
+        }
+        .service-icon {
+            font-size: 2.5em;
+            color: #A0522D;
+            margin-bottom: 10px;
+        }
+        
+        /* Tombol */
+        .btn {
+            background-color: #A0522D; /* Sienna */
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #6F4E37;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #382c20;
+            color: #f7f5f2;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">BERANDA</a>
+        <a href="menu.html">MENU</a> 
+        <a href="layanan.html" class="active">LAYANAN</a> 
+        <a href="tentang.html">TENTANG KAMI</a>
+        <a href="kontak.html">KONTAK</a>
+    </nav>
+
+    <div class="container">
+        <h1>Layanan dan Fasilitas Kami</h1>
+        <p style="text-align: center; margin-bottom: 30px; font-size: 1.1em;">Kami menawarkan berbagai layanan untuk menjamin pengalaman terbaik, baik di tempat maupun dari rumah Anda.</p>
+        
+        <div class="service-list">
+            
+            <div class="service-card">
+                <div class="service-icon">🛋</div>
+                <h2>Dine-in & Suasana</h2>
+                <p>Nikmati suasana kafe kami yang hangat dan tenang. Tersedia area smoking dan non-smoking, stop kontak di setiap meja, serta musik yang menenangkan.</p>
+                <ul>
+                    <li>FREE HIGH-SPEED WIFI</li>
+                    <li>AREA KERJA KOMUNAL</li>
+                    <li>SOPA NYAMAN</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h2>Take Away Cepat</h2>
+                <p>Terburu-buru? Pesan dan ambil kopi Anda langsung di konter tanpa harus menunggu lama. Kami juga menyediakan *Drive-Thru* di lokasi utama kami.</p>
+                <a href="#lokasi" class="btn">Cek Lokasi Drive-Thru</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🛵</div>
+                <h2>Pesan Antar (Delivery)</h2>
+                <p>Nikmati kopi favorit Anda tanpa harus keluar rumah. Tersedia layanan pesan antar melalui aplikasi mitra kami.</p>
+                <p style="font-size: 0.9em; margin-top: 10px;">*Tersedia di GoFood, GrabFood, dan ShopeeFood.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎉</div>
+                <h2>Reservasi & Event</h2>
+                <p>Area kami dapat disewa untuk acara privat, rapat kecil, atau pertemuan komunitas. Kami menyediakan paket katering kopi dan camilan.</p>
+                <a href="kontak.html" class="btn">Hubungi untuk Booking</a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kopi Wantuneun. Dibuat dengan Cinta dan Kopi.</p>
+    </footer>
+
+</body>
+</html>

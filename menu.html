@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lengkap - Kopi Senja</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f2; /* Krem Lembut */
+            color: #382c20; /* Cokelat Gelap */
+        }
+        /* Navigasi */
+        .navbar {
+            background-color: #382c20;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #6F4E37; /* Cokelat Kopi */
+        }
+        
+        /* Konten Utama */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container h1 {
+            color: #A0522D;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        /* Styling Section Menu */
+        .menu-category {
+            background: white;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .menu-category h2 {
+            color: #4A3A2C;
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 3px solid #E0C7A9;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-info {
+            text-align: left;
+        }
+        .item-info h4 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #382c20;
+        }
+        .item-info p {
+            margin: 5px 0 0;
+            color: #6F4E37;
+            font-style: italic;
+        }
+        .item-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #A0522D;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #382c20;
+            color: #f7f5f2;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">BERANDA</a>
+        <a href="menu.html" class="active">MENU</a> 
+        <a href="layanan.html">LAYANAN</a> 
+        <a href="tentang.html">TENTANG KAMI</a>
+        <a href="kontak.html">KONTAK</a>
+    </nav>
+
+    <div class="container">
+        <h1>Daftar Menu Kopi Wantuneun</h1>
+        
+        <section class="menu-category">
+            <h2>Espresso & Signature Drinks</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Senja Latte (House Special)</h4>
+                    <p>Latte dengan campuran rahasia gula aren dan foam krim susu.</p>
+                </div>
+                <span class="item-price">Rp 38.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Classic Cappuccino</h4>
+                    <p>Perpaduan espresso, susu, dan busa tebal yang sempurna.</p>
+                </div>
+                <span class="item-price">Rp 35.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Mocha Mint Freeze</h4>
+                    <p>Minuman cokelat-kopi dingin dengan sentuhan menyegarkan dari mint.</p>
+                </div>
+                <span class="item-price">Rp 42.000</span>
+            </div>
+            
+        </section>
+
+        <section class="menu-category">
+            <h2>Manual Brew (Single Origin)</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>V60 Aceh Gayo</h4>
+                    <p>Cita rasa nutty dan earthy, diseduh dengan metode tetes.</p>
+                </div>
+                <span class="item-price">Rp 45.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Japanese Iced Flores Bajawa</h4>
+                    <p>Kopi dingin dengan karakter buah yang cerah dan ringan.</p>
+                </div>
+                <span class="item-price">Rp 48.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>French Press Bali Kintamani</h4>
+                    <p>Seduhan kaya rasa dengan body yang berat dan bold.</p>
+                </div>
+                <span class="item-price">Rp 43.000</span>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>Non-Kopi & Camilan</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Pure Matcha Latte</h4>
+                    <p>Matcha otentik yang creamy, disajikan panas atau dingin.</p>
+                </div>
+                <span class="item-price">Rp 40.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Belgian Hot Chocolate</h4>
+                    <p>Cokelat pekat ala Belgia yang hangat dan memanjakan.</p>
+                </div>
+                <span class="item-price">Rp 39.000</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Butter Croissant</h4>
+                    <p>Croissant Prancis yang flaky dan renyah.</p>
+                </div>
+                <span class="item-price">Rp 25.000</span>
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 30px;">
+             <a href="layanan.html" class="btn">LIHAT LAYANAN PESAN ANTAR</a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kopi Wantuneun. Dibuat dengan Cinta dan Kopi.</p>
+    </footer>
+
+</body>
+</html>

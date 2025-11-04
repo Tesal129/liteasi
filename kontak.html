@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Kopi Senja</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f2; /* Krem Lembut */
+            color: #382c20; /* Cokelat Gelap */
+        }
+        /* Navigasi */
+        .navbar {
+            background-color: #382c20;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #6F4E37; /* Cokelat Kopi */
+        }
+        
+        /* Konten Utama */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container h1 {
+            color: #A0522D;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        /* Layout Kontak & Form */
+        .contact-layout {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Formulir Kontak */
+        .contact-form {
+            flex: 2;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #4A3A2C;
+        }
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Penting untuk padding */
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .btn-submit {
+            background-color: #A0522D; 
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #6F4E37;
+        }
+
+        /* Info Kontak */
+        .contact-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .contact-info h2 {
+            color: #4A3A2C;
+            border-bottom: 2px solid #E0C7A9;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .contact-detail {
+            margin-bottom: 20px;
+        }
+        .contact-detail strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Peta (Placeholder) */
+        .map-placeholder {
+            height: 300px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #382c20;
+            color: #f7f5f2;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">BERANDA</a>
+        <a href="menu.html">MENU</a> 
+        <a href="layanan.html">LAYANAN</a> 
+        <a href="tentang.html">TENTANG KAMI</a>
+        <a href="kontak.html" class="active">KONTAK</a>
+    </nav>
+
+    <div class="container">
+        <h1>Hubungi Kami</h1>
+        
+        <div class="contact-layout">
+            
+            <div class="contact-form">
+                <h2>Kirim Pesan kepada Kami</h2>
+                <form action="#" method="POST">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subjek">Subjek Pesan</label>
+                    <input type="text" id="subjek" name="subjek">
+                    
+                    <label for="pesan">Pesan Anda</label>
+                    <textarea id="pesan" name="pesan" required></textarea>
+                    
+                    <button type="submit" class="btn-submit">KIRIM PESAN</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Informasi Kopi Wantuneun</h2>
+                
+                <div class="contact-detail">
+                    <strong>Alamat Utama:</strong>
+                    <p>Kp Taman Mekar Rt 04 Rw 15 Kecamatan Nagreg Kabupaten Bandung</p>
+                </div>
+
+                <div class="contact-detail">
+                    <strong>Telepon & Email:</strong>
+                    <p>Telepon: 083836305843<br>Email: kopiwantuneun@gmail.com</p>
+                </div>
+                
+                <div class="contact-detail">
+                    <strong>Jam Operasional:</strong>
+                    <p>Setiap Hari: 07.00 - 22.00 WIB</p>
+                </div>
+                
+                <div class="contact-detail">
+                    <strong>Media Sosial:</strong>
+                    <p>
+                        <a href="https://www.instagram.com/txlmulyan_/" target="_blank" style="color: #A0522D; text-decoration: none;">Instagram: @kopiwantuneun</a><br>
+                        
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="map-placeholder">
+            [ Placeholder Peta Lokasi Google Maps ]
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kopi Wantuneun. Dibuat dengan Cinta dan Kopi.</p>
+    </footer>
+
+</body>
+</html>
